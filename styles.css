@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    min-height: 50vh;
+    background-color: rgb(66, 61, 61);
+    position: relative;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 3rem;
+    -webkit-text-stroke: 1.5px rgb(3, 3, 3);
+}
+
+h1::before {
+    content: 'Neon Button';
+    color: rgb(57, 190, 57);
+    position: absolute;
+    transform: translate(-0.3%, 3%);
+    z-index: -1;
+    -webkit-text-stroke: 0px;
+    text-shadow: 0 0 9px;
+}
+
+h1::after {
+    content: 'Design';
+    color: rgb(177, 177, 37);
+    position: absolute;
+    transform: translate(-100.6%, 3%);
+    z-index: -1;
+    -webkit-text-stroke: 0px;
+    text-shadow: 0 0 9px;
+}
